@@ -162,7 +162,7 @@ html, body {
 
 
   .tocify-item>a, .toc-footer li {
-    padding: 0 $nav-padding 0 $nav-padding;
+    padding: 5px $nav-padding;
     display: block;
     overflow-x: hidden;
     white-space: nowrap;
@@ -184,6 +184,7 @@ html, body {
     @include transition-property('background');
     @include transition-timing-function('linear');
     @include transition-duration(230ms);
+    font-size: 21px
   }
 
   // This is the currently selected ToC entry
@@ -467,7 +468,7 @@ html, body {
 
   code {
     background-color: rgba(0,0,0,0.15);
-    padding: 3px;
+    padding: 6px;
     border-radius: 3px;
     @extend %break-words;
     @extend %code-font;
